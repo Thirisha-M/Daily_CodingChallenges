@@ -1,0 +1,16 @@
+"use strict";
+/*Declare two variables x and y with numerical values. Swap their values without using a third variablep*/
+Object.defineProperty(exports, "__esModule", { value: true });
+var readline = require("readline");
+var c = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+c.question("Enter a and b:", function (values) {
+    var a = Number((values.split(" "))[0]);
+    var b = Number((values.split(" "))[1]);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    console.log("Values of a and b are", a, b);
+});
