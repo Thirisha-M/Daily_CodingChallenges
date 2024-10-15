@@ -21,8 +21,8 @@
 // For the last customer, we cannot give the change of $15 back because we only have two $10 bills.
 // Since not every customer received the correct change, the answer is false.
 function lemonade(juices) {
-    var fivedollar = 0;
-    var tendollar = 0;
+    var fivedollar = 1;
+    var tendollar = 1;
     var twentydollar = 0;
     for (var _i = 0, juices_1 = juices; _i < juices_1.length; _i++) {
         var juice = juices_1[_i];
@@ -40,6 +40,7 @@ function lemonade(juices) {
         }
         else if (juice === 20) {
             if (tendollar > 0 && fivedollar > 0) {
+                twentydollar++;
                 tendollar--;
                 fivedollar--;
             }
@@ -56,4 +57,4 @@ function lemonade(juices) {
     }
     return true;
 }
-console.log(lemonade([5, 10, 15]));
+console.log(lemonade([10, 5, 5, 5]));

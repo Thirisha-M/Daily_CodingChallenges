@@ -22,8 +22,8 @@
 // For the last customer, we cannot give the change of $15 back because we only have two $10 bills.
 // Since not every customer received the correct change, the answer is false.
 function lemonade(juices: number[]): boolean {
-    var fivedollar = 0;
-    var tendollar = 0;
+    var fivedollar = 1;
+    var tendollar = 1;
     var twentydollar=0;
 
     for (var juice of juices) {
@@ -64,7 +64,7 @@ function lemonade(juices: number[]): boolean {
     }
     return true;
 }
-console.log(lemonade([5,10,15]));
+console.log(lemonade([10,5,5,5]));
 
 
 
