@@ -40,3 +40,4 @@ function ascendingSequence(arr: number[]): void
 }
 const arr: number[] = [45,40,0,39,10];
 ascendingSequence(arr);
+
