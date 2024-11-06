@@ -13,3 +13,4 @@ function isPerfectNumber(num: number): void {
 }
 console.log(isPerfectNumber(6))//1 3 2
 
+
